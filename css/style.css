@@ -1,0 +1,193 @@
+/* Estilo global */
+body {
+    background-color: #000000ee;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para separadores (hr) */
+hr {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #00c0f0;
+}
+
+/* Estilo geral para títulos */
+h1,
+.title {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 15px #00c0f0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    /* Retornado para o tamanho original */
+}
+
+p {
+    font-size: large;
+}
+
+/* Seção do título principal */
+#title-section {
+    padding: 50px 20px;
+}
+
+/* Seção do herói */
+.hero-section {
+    background: url('/img/FundoHome.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay-text {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 23px;
+    text-align: center;
+}
+
+.overlay-text h1 {
+    color: #3f3f3f;
+    font-size: 36px;
+}
+
+.overlay-text .highlight {
+    font-size: 42px;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+.overlay-text p {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Seção de habilidades */
+.skills {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills__tittle {
+    font-size: 36px;
+    /* Tamanho original dos títulos */
+    color: #00c0f0;
+    margin-bottom: 40px;
+}
+
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.skills__icon {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+}
+
+.skills__icon i {
+    font-size: 3rem;
+    color: #00c0f0;
+}
+
+.skills__icon span {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Seção de contato */
+.contact-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111;
+    border-radius: 15px;
+}
+
+/* Seção de contato */
+.contact-section h1 {
+    margin-bottom: 40px;
+    color: #fff;
+    /* Retornado ao padrão branco */
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.contact-info div {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #fff;
+    transition: background-color 0.3s;
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.contact-info div:hover {
+    background-color: #333;
+}
+
+.contact-info a {
+    color: #00c0f0;
+    /* Cor diferenciada para os links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #00ffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .sobre-mim,
+    .skills,
+    .contact-section {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .skills__container,
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills__icon,
+    .contact-info div {
+        width: 100%;
+        max-width: 300px;
+    }
+}
